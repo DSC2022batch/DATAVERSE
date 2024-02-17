@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Audiowide&family=Oxanium:wght@200;300;400;500;600;700;800&family=Coda:wght@400;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Allura&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Syncopate:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --cursor-color: rgb(136 19 55);
+}
+
+html.dark-mode {
+  --cursor-color: rgb(136 19 55);
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+}
+
+.navigation__title {
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 05% 100%);
+}
+
+.__hero {
+  background: linear-gradient(to bottom, rgba(9,9,9,1), rgba(09, 09, 09, 0.5), rgba(09, 09, 09, 1)), url('./assets/BG0.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.explore__button {
+  position: relative;
+  z-index: 0;
+}
+
+.explore__button::before {
+  z-index: -1;
+  content: "";
+  box-sizing: border-box;
+  border: 1.6px solid rgb(136 19 55);
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+  top: 0;
+  /* transform: translate(-50%, -50%); */
+  transition: all 0.2s linear;
+}
+
+.explore__button:hover::before{
+  left: 0;
+  width: 100%;
+}
+
+.text-border {
+  text-shadow: 0.5px 0 #fff, -0.5px 0 #fff, 0 0.5px #fff, 0 -0.5px #fff,
+    0.5px 0.5px #fff, -0.5px -0.5px #fff, 0.5px -0.5px #fff, -0.5px 0.5px #fff;
+}
+
+
+
+
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'PP Neue Montreal Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal Book'), url('../src/fonts/ppneuemontreal-book.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: 'PP Neue Montreal Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal Medium'), url('../src/fonts/ppneuemontreal-medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Neue Montreal SemiBold italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal SemiBold italic'), url('../src/fonts/ppneuemontreal-semibolditalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Neue Montreal Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal Bold'), url('../src/fonts/ppneuemontreal-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal Italic'), url('ppneuemontreal-italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PP Neue Montreal Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PP Neue Montreal Thin'), url('ppneuemontreal-thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: "DEC Terminal Modern";
+  src: url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.eot");
+  src: url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1e4c00e45e6c6e086f49383cc0020b1f.svg#DEC Terminal Modern")format("svg");
+}
