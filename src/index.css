@@ -32,7 +32,7 @@ body {
 }
 
 .__hero {
-  background: linear-gradient(to bottom, rgba(9,9,9,1), rgba(09, 09, 09, 0.5), rgba(09, 09, 09, 1)), url('./assets/BG0.png');
+  background: linear-gradient(to bottom, rgba(9, 9, 9, 1), rgba(09, 09, 09, 0.5), rgba(09, 09, 09, 1)), url('./assets/BG0.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ body {
   transition: all 0.2s linear;
 }
 
-.explore__button:hover::before{
+.explore__button:hover::before {
   left: 0;
   width: 100%;
 }
@@ -68,7 +68,26 @@ body {
     0.5px 0.5px #fff, -0.5px -0.5px #fff, 0.5px -0.5px #fff, -0.5px 0.5px #fff;
 }
 
+.participation__infocard {
+  position: relative;
+  text-align: justify;
+}
 
+.participation__infocard::before {
+  z-index: -10;
+  clip-path: polygon(0 0, 0 0, 100% 100%, 100% 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(161 161 170);
+  filter: saturate(1.2);
+  transition: all 0.2s linear;
+}
+
+.participation__infocard:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
 
 
 

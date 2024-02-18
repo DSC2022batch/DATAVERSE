@@ -23,7 +23,7 @@ const Timeline = () => {
     }
   ]
   return (
-    <div className='min-h-[100dvh] bg-[#090909]'>
+    <div className=' bg-[#090909]'>
       <SectionHeading Heading={"Timeline"} />
       {timelineData.map((timelineData, index) => (<TimelineCard key={index} Data={timelineData.data} Image={timelineData.image} Title={timelineData.title} />))}
     </div>

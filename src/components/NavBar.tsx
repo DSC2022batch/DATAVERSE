@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className="">
 
       {/* For Desktops */}
-      <header className="text-white h-12 text-lg font-Syne select-none fixed w-full bg-[#090909] z-[999999]">
+      <header className="text-white h-12 text-lg font-Syne select-none fixed w-full bg-[#090909] z-[999999] hidden lg:block">
         <div className="flex justify-between items-center h-full px-10">
           <div>
             <div>
@@ -23,7 +23,7 @@ const NavBar = () => {
           <div>
             <div>
               <nav>
-                <ul className="flex gap-6 text-base">
+                <ul className="flex gap-6 font-bold text-base">
                   <li><a href="">About</a></li>
                   <li><a href="">Contact</a></li>
                 </ul>
@@ -32,7 +32,21 @@ const NavBar = () => {
           </div>
         </div>
       </header>
-      <Motion/>
+
+      {/* For Mobile and Tabs */}
+      <header className="lg:hidden select-none  z-[999999] fixed w-full text-zinc-300 bg-[#090909] h-12 font-Inter font-bold flex justify-around items-center px-5">
+        <div>
+          <h1>DSC</h1>
+        </div>
+        <div className="md:hidden"></div>
+        <div className="navigation__title bg-rose-900 text-center flex justify-center items-center saturate-200 text-sm px-8 h-full">
+          <h1>Welcome to <br /> Dataverse</h1>
+        </div>
+        <div>
+          <button>Contact</button>
+        </div>
+      </header>
+      <Motion />
     </div>
   )
 }
