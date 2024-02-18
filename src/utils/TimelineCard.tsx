@@ -23,12 +23,13 @@ const Timeline: React.FC<{ Title: string, Image: any, Data: string }> = ({ Title
             {/* For Mobile and Tabs */}
             <div className="w-full flex flex-col justify-center items-center lg:hidden px-8 py-4 bg-[#090909]">
                 <div className="border-2 border-rose-900 saturate-200 w-full  max-w-screen-sm overflow-hidden">
-                    <div>
-                        <h1 className="text-zinc-300  uppercase font-DECTM text-xl text-center py-3">{Title}</h1>
+                    <div className="">
+                        <h1 className="text-zinc-300 font-Figtree capitalize font-semibold text-center py-2">{Title}</h1>
                     </div>
-                    <hr className="border-rose-900 saturate-200" />
-                    <img src={Image} className="relative -z-10 opacity-10 saturate-50" alt="" />
-                    <p className="absolute top-1/2 -translate-y-1/2 px-4 font-Figtree leading-relaxed left-0 z-10 text-center text-sm md:text-base text-white">{Data}</p>
+                    <div className="relative">
+                        <p className="absolute px-4 py-2 top-1/2 -translate-y-1/2 text-zinc-300 font-WorkSans text-center">{Data}</p>
+                        <img className="opacity-10 saturate-50" src={Image}  />
+                    </div>
                 </div>
             </div>
         </div>
