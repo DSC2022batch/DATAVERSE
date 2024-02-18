@@ -71,6 +71,8 @@ body {
 .participation__infocard {
   position: relative;
   text-align: justify;
+  background-color: #090909;
+  z-index: -20;
 }
 
 .participation__infocard::before {
