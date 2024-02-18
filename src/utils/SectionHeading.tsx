@@ -8,10 +8,10 @@ const SectionHeading: React.FC<{Heading: string}> = ({Heading }) => {
             <div className='select-none'>
                 <Marquee className='font-Audiowide overflow-hidden' autoFill={true} pauseOnHover play={true}>
                     <Parallax translateX={[0, -60]} className='w-full'>
-                        <h1 className='uppercase text-rose-900 saturate-200 text-6xl px-4'>{Heading}</h1>
+                        <h1 className='uppercase text-rose-900 saturate-200 text-3xl md:text-5xl lg:text-6xl px-4'>{Heading}</h1>
                     </Parallax>
                     <Parallax translateX={[0, -60]} className='w-full'>
-                        <h1 className='uppercase text-border text-[#090909] text-6xl px-4'>{Heading}</h1>
+                        <h1 className='uppercase text-border text-[#090909] text-3xl md:text-5xl lg:text-6xl px-4'>{Heading}</h1>
                     </Parallax>
                 </Marquee>
             </div>
