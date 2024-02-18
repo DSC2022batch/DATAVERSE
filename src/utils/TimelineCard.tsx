@@ -26,6 +26,7 @@ const Timeline: React.FC<{ Title: string, Image: any, Data: string }> = ({ Title
                     <div className="">
                         <h1 className="text-zinc-300 font-Figtree capitalize font-semibold text-center py-2">{Title}</h1>
                     </div>
+                    <hr className="border-rose-900 "/>
                     <div className="relative">
                         <p className="absolute px-4 py-2 top-1/2 -translate-y-1/2 text-zinc-300 font-WorkSans text-center">{Data}</p>
                         <img className="opacity-10 saturate-50" src={Image}  />
