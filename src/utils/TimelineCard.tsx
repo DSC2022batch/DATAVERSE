@@ -12,7 +12,7 @@ const Timeline: React.FC<{ Title: string, Image: any, Data: string }> = ({ Title
                 <div className="w-full h-56 border-2 border-rose-900 saturate-200 max-w-screen-lg">
                     <div className="flex flex-col items-center justify-center">
                         <h1 className="text-3xl text-zinc-300 saturate-100 font-DECTM py-6 capitalize">{Title}</h1>
-                        <Parallax className="max-w-screen-md border-2 relative border-rose-900 h-56 w-full cursor-pointer bg-[#090909] overflow-hidden" speed={10} opacity={[0.5, 2]}>
+                        <Parallax className="max-w-screen-md border-2 relative border-rose-900 h-56 w-full cursor-pointer bg-[#090909] overflow-hidden" speed={15} opacity={[0.5, 2]}>
                             <img src={Image} className="absolute object-contain opacity-15 saturate-50 -bottom-1/4" alt="" />
                             <p className="top-1/2 -translate-y-1/2 px-5 text-center font-RedHatDisplay absolute text-zinc-300 text-lg">{Data}</p>
                         </Parallax>
