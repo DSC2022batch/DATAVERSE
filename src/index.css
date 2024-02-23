@@ -81,10 +81,11 @@ body {
 
 .participation__infocard::before {
   z-index: -10;
-  clip-path: polygon(0 0, 0 0, 100% 100%, 100% 100%);
+  /* clip-path: polygon(0 0, 0 0, 100% 100%, 100% 100%); */
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0%;
+  left: 50%;
   height: 100%;
   background-color: rgb(161 161 170);
   filter: saturate(1.2);
@@ -92,7 +93,9 @@ body {
 }
 
 .participation__infocard:hover::before {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  left: 0%;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
 }
 
 li {
