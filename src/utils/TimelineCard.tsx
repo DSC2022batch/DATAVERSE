@@ -29,7 +29,7 @@ const Timeline: React.FC<{ Title: string, Image: any, Data: string }> = ({ Title
                     <hr className="border-zinc-400 "/>
                     <div className="relative">
                         <div className="absolute w-full h-full bg-zinc-400"></div>
-                        <p className="absolute px-4 py-2 top-1/2 -translate-y-1/2 text-zinc-950 md:text-lg font-RedHatDisplay text-center">{Data}</p>
+                        <p className="absolute px-4 py-2 top-1/2 -translate-y-1/2 text-zinc-950 text-sm md:text-lg font-RedHatDisplay text-center">{Data}</p>
                         <img className="opacity-10 saturate-[0.3]" src={Image}  />
                     </div>
                 </div>
