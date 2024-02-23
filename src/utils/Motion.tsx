@@ -1,5 +1,5 @@
 
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, useSpring } from "framer-motion"
 
 
 
